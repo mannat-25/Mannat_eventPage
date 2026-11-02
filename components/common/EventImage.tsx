@@ -50,6 +50,7 @@ export function EventImage({ src, alt, fallbackLabel, sizes, priority, className
       fill
       sizes={sizes}
       priority={priority}
+      unoptimized={src.startsWith('data:') || src.startsWith('blob:')}
       loading={priority ? undefined : 'lazy'}
       onError={() => setFailedSrc(src)}
       className={cn('object-cover', className)}

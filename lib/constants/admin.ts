@@ -49,7 +49,5 @@ export const ADMIN = {
   editor: {
     newTitle: 'New event',
     editTitle: 'Edit event',
-    placeholder: 'The event editor is a separate slice. This route is wired so Add and Edit links resolve.',
-    back: 'Back to events',
   },
 } as const
